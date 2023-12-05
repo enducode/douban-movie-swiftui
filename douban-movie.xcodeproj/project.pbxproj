@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0686353A2B1E14E100D8870E /* douban_movieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068635392B1E14E100D8870E /* douban_movieApp.swift */; };
-		0686353C2B1E14E100D8870E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686353B2B1E14E100D8870E /* ContentView.swift */; };
 		0686353E2B1E14E200D8870E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0686353D2B1E14E200D8870E /* Assets.xcassets */; };
 		068635412B1E14E200D8870E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068635402B1E14E200D8870E /* Preview Assets.xcassets */; };
+		068635492B1F3B7A00D8870E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068635482B1F3B7A00D8870E /* HomeView.swift */; };
+		0686354B2B1F3C3000D8870E /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686354A2B1F3C3000D8870E /* MineView.swift */; };
+		0686354D2B1F3E6700D8870E /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686354C2B1F3E6700D8870E /* IndexView.swift */; };
+		068635512B1F400200D8870E /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068635502B1F400200D8870E /* api.swift */; };
+		068635532B1F42AF00D8870E /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068635522B1F42AF00D8870E /* MovieItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		068635362B1E14E100D8870E /* douban-movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "douban-movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		068635392B1E14E100D8870E /* douban_movieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douban_movieApp.swift; sourceTree = "<group>"; };
-		0686353B2B1E14E100D8870E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0686353D2B1E14E200D8870E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068635402B1E14E200D8870E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		068635482B1F3B7A00D8870E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0686354A2B1F3C3000D8870E /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
+		0686354C2B1F3E6700D8870E /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		068635502B1F400200D8870E /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		068635522B1F42AF00D8870E /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		068635382B1E14E100D8870E /* douban-movie */ = {
 			isa = PBXGroup;
 			children = (
+				0686354F2B1F3ED700D8870E /* Model */,
+				0686354E2B1F3ECD00D8870E /* Services */,
+				068635472B1F3B6700D8870E /* View */,
 				068635392B1E14E100D8870E /* douban_movieApp.swift */,
-				0686353B2B1E14E100D8870E /* ContentView.swift */,
 				0686353D2B1E14E200D8870E /* Assets.xcassets */,
 				0686353F2B1E14E200D8870E /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				068635402B1E14E200D8870E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		068635472B1F3B6700D8870E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				068635482B1F3B7A00D8870E /* HomeView.swift */,
+				0686354A2B1F3C3000D8870E /* MineView.swift */,
+				0686354C2B1F3E6700D8870E /* IndexView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0686354E2B1F3ECD00D8870E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				068635502B1F400200D8870E /* api.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0686354F2B1F3ED700D8870E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				068635522B1F42AF00D8870E /* MovieItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0686353C2B1E14E100D8870E /* ContentView.swift in Sources */,
+				068635512B1F400200D8870E /* api.swift in Sources */,
+				068635492B1F3B7A00D8870E /* HomeView.swift in Sources */,
+				0686354B2B1F3C3000D8870E /* MineView.swift in Sources */,
+				068635532B1F42AF00D8870E /* MovieItem.swift in Sources */,
+				0686354D2B1F3E6700D8870E /* IndexView.swift in Sources */,
 				0686353A2B1E14E100D8870E /* douban_movieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
